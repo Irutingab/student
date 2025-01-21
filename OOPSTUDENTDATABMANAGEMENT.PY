@@ -1,4 +1,5 @@
 import mysql.connector
+import os
 import csv
 from dbconnection import DataBaseConnection
 
