@@ -78,16 +78,7 @@ class StudentReport:
             print(f"Top Student: {top_student[0]} with {top_student[2]:.2f}%")
         print(f"Class Average: {class_average:.2f}%")
 
-    def close(self):
-        """Close the database connection."""
-        self.cursor.close()
-        self.db_connection.close()
-
-
-# Main function to generate the report
 if __name__ == "__main__":
     student_report = StudentReport()
-    try:
-        student_report.generate_report()
-    finally:
-        student_report.close()
+student_report.generate_report()
+    
